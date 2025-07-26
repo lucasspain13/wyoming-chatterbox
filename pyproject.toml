@@ -1,14 +1,15 @@
 [project]
-name = "wyoming-piper"
-version = "1.6.2"
-description = "Wyoming Server for Piper"
+name = "wyoming-chatterbox"
+version = "1.0.0"
+description = "Wyoming Server for Chatterbox TTS"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Michael Hansen", email = "mike@rhasspy.org"}
+    {name = "Michael Hansen", email = "mike@rhasspy.org"},
+    {name = "Lucas Spain"}
 ]
-keywords = ["rhasspy", "wyoming", "piper", "tts"]
+keywords = ["rhasspy", "wyoming", "chatterbox", "tts"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -26,17 +27,14 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "http://github.com/rhasspy/wyoming-piper"
+Homepage = "http://github.com/lucasspain13/wyoming-chatterbox"
 
 [project.scripts]
-wyoming-piper = "wyoming_piper.__main__:run"
+wyoming-chatterbox = "chatterbox.__main__:run"
 
 [tool.setuptools.packages.find]
-include = ["wyoming_piper"]
+include = ["chatterbox"]
 exclude = ["tests", "tests.*"]
-
-[tool.setuptools.package-data]
-wyoming_piper = ["voices.json"]
 
 [build-system]
 requires = ["setuptools>=42", "wheel"]
